@@ -48,6 +48,7 @@ export default function App() {
     let newNumber = { ...number };
     if (!newNumber.previous) return;
     if (!newNumber.current) return;
+    if (!newNumber.operator) return;
     let a = parseFloat(newNumber.previous);
     let b = parseFloat(newNumber.current);
     let result = OPERATIONS[newNumber.operator];
