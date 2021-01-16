@@ -47,6 +47,7 @@ export default function App() {
   function getResult(evt) {
     let newNumber = { ...number };
     if (!newNumber.previous) return;
+    if (!newNumber.current) return;
     let a = parseFloat(newNumber.previous);
     let b = parseFloat(newNumber.current);
     let result = OPERATIONS[newNumber.operator];
@@ -108,7 +109,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>It's Calulator</h1>
+      <h1>It's Calculator</h1>
       {number.previous}
       {number.operator}
       {number.current}
