@@ -1,0 +1,68 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.cal-grid {
+  height: 500px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.display {
+  grid-column-start: span 4;
+  padding: 30px;
+}
+
+.grid-column-4 {
+  grid-column-start: 4;
+}
+
+.grid-row-3 {
+  grid-row-start: 3;
+}
+
+.grid-row-4 {
+  grid-row-start: 4;
+}
+
+.grid-row-5 {
+  grid-row-start: 5;
+}
+.grid-row-6 {
+  grid-row-start: 6;
+}
+
+.digit-zero {
+  grid-row-start: 6;
+  grid-column-start: span 2;
+}
+
+.light-gray {
+  background-color: rgb(123 123 123);
+  color: white;
+  font-size: 40px;
+}
+
+.orange {
+  background-color: rgb(255 147 42);
+  color: white;
+  font-size: 40px;
+}
+
+.darker-gray {
+  background-color: rgb(96 96 97);
+  color: white;
+  font-size: 40px;
+}
+
+.dark-gray {
+  background-color: rgb(80 80 81);
+  color: white;
+  font-size: 70px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
